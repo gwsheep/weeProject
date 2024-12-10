@@ -4,14 +4,6 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/wee" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/wee" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/weeEureka" />
         <option name="modules">
           <set>
@@ -24,6 +16,22 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/weeGateway" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/weeService" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/weeService" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/weeService/weeService" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/weeService/weeService" />
           </set>
         </option>
       </GradleProjectSettings>

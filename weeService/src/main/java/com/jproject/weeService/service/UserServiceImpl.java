@@ -1,0 +1,26 @@
+package com.jproject.weeService.service;
+
+
+import com.jproject.weeService.entity.Users;
+import com.jproject.weeService.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
+
+@Service
+@RequiredArgsConstructor
+public class UserServiceImpl implements UserService {
+
+    private final UserRepository userRepository;
+
+    @Override
+    public Page<Users> getUsers() {
+        Sort sort = Sort.by(Sort.Direction.DESC, "id");
+        Pageable pageable = PageRequest.of(0,20, sort);
+        return userRepository.findAll(pageable);
+    }
+
+}
