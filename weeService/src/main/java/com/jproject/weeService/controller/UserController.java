@@ -20,7 +20,8 @@ public class UserController {
     private final UserService userService;
 
     @GetMapping("/list")
-    public ResponseEntity<Page<Users>> test() {
+    public ResponseEntity<Page<?>> test() {
+        log.info("User list requested");
         return ResponseEntity.status(HttpStatus.OK).body(userService.getUsers());
     }
 
