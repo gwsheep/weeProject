@@ -5,6 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+//RestController 기반으로 작성하기
+
 @Slf4j
 @Controller
 @RequestMapping("/wee")

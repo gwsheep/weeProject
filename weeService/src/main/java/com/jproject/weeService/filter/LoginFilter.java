@@ -29,7 +29,6 @@ public class LoginFilter implements Filter {
 
     @Override
     public void destroy() {
-
         log.info("=== Filter 종료 ===");
     }
 

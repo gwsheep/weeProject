@@ -5,6 +5,8 @@ import org.springframework.data.domain.Page;
 
 public interface UserService {
 
-    Page<Users> getUsers();
+    Page<Users> getUserList();
+
+    Users getUserByUserId(String userId);
 
 }

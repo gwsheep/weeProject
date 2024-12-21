@@ -17,10 +17,16 @@ public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 
     @Override
-    public Page<Users> getUsers() {
+    public Page<Users> getUserList() {
         Sort sort = Sort.by(Sort.Direction.DESC, "id");
         Pageable pageable = PageRequest.of(0,20, sort);
         return userRepository.findAll(pageable);
+    }
+
+    @Override
+    public Users getUserByUserId(String userId) {
+        Users user = userRepository.findByUserId(userId);
+        return user;
     }
 
 }
