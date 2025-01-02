@@ -19,20 +19,22 @@ public class Users {
     private Long id;
     @Column(unique = true, name = "user_id")
     private String userId;
-    @Column(name = "password")
-    private String password;
+    @Column(name = "user_pw")
+    private String userPw;
     @Column(name = "user_name")
     private String userName;
-    @Column(name = "age")
-    private Long age;
-    @Column(name = "gender")
-    private String gender;
-    @Column(name = "phone_no")
-    private String phoneNo;
-    @Column(name = "address")
-    private String address;
-    @Column(name = "mail")
-    private String mail;
-
+    @Column(name = "user_age")
+    private Long userAge;
+    @Column(name = "user_gender")
+    private String userGender;
+    @Column(name = "user_pno")
+    private String userPhoneNo;
+    @Column(name = "user_address")
+    private String userAddress;
+    @Column(name = "user_mail")
+    private String userMail;
+    @ManyToOne
+    @JoinColumn(name = "careGiver_id")
+    private CareGiver careGiver;
 
 }
