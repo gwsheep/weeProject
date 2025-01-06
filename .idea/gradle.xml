@@ -20,10 +20,34 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/weeProcessor" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/weeProcessor" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/weeService" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/weeService" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/weeSink" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/weeSink" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/weeSource" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/weeSource" />
           </set>
         </option>
       </GradleProjectSettings>

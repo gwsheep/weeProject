@@ -4,7 +4,10 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/weeEureka" />
     <file type="web" url="file://$PROJECT_DIR$/weeGateway" />
+    <file type="web" url="file://$PROJECT_DIR$/weeProcessor" />
     <file type="web" url="file://$PROJECT_DIR$/weeService" />
+    <file type="web" url="file://$PROJECT_DIR$/weeSink" />
+    <file type="web" url="file://$PROJECT_DIR$/weeSource" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
