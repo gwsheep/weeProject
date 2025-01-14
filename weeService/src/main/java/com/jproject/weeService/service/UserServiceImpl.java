@@ -10,6 +10,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
@@ -21,6 +23,11 @@ public class UserServiceImpl implements UserService {
         Sort sort = Sort.by(Sort.Direction.DESC, "id");
         Pageable pageable = PageRequest.of(0,20, sort);
         return userRepository.findAll(pageable);
+    }
+
+    @Override
+    public List<Users> getUserListAll() {
+        return userRepository.findAll();
     }
 
     @Override
