@@ -1,24 +1,23 @@
 package com.jproject.weeService.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 //RestController 기반으로 작성하기
 
 @Slf4j
-@Controller
+@RestController
 @RequestMapping("/wee")
 public class WeeController {
 
     @GetMapping("/main")
-    public String getMain() {
+    public ResponseEntity<?> getMain() {
         log.info("Main Page requested");
-        return "mainPage";
+        return ResponseEntity.ok("Main Page Response");
     }
-
-
-
 
 }

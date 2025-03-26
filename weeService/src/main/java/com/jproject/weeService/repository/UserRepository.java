@@ -9,4 +9,6 @@ public interface UserRepository extends JpaRepository<Users, Long> {
 
     Users findByUserId(String userId);
 
+    Users updateUsersByUserId(String userId, Users users);
+
 }

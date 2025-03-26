@@ -21,7 +21,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public Page<Users> getUserList() {
         Sort sort = Sort.by(Sort.Direction.DESC, "id");
-        Pageable pageable = PageRequest.of(0,20, sort);
+        Pageable pageable = PageRequest.of(0,30, sort);
         return userRepository.findAll(pageable);
     }
 
@@ -35,5 +35,21 @@ public class UserServiceImpl implements UserService {
         Users user = userRepository.findByUserId(userId);
         return user;
     }
+
+    @Override
+    public String enrollUser(Users user) {
+        if(user == null) {
+            return "user is null";
+        }
+        userRepository.save(user);
+        return "user enrolled";
+    }
+
+    @Override
+    public String updateUser(Users user) {
+        userRepository.updateUsersByUserId(user.getUserId(), user);
+        return "user updated";
+    }
+
 
 }

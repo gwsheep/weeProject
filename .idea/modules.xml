@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/weeProject.iml" filepath="$PROJECT_DIR$/weeProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/weeService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/weeService.main.iml" />
     </modules>
   </component>
 </project>

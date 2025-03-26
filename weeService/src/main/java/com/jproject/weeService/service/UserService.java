@@ -13,4 +13,8 @@ public interface UserService {
 
     Users getUserByUserId(String userId);
 
+    String enrollUser(Users user);
+    
+    String updateUser(Users user);
+
 }
