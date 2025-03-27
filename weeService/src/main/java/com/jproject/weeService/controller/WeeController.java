@@ -20,4 +20,6 @@ public class WeeController {
         return ResponseEntity.ok("Main Page Response");
     }
 
+    /* 각 기능을 완성되면 기능을 모듈화 하기 (MSA) */
+
 }
